@@ -1,0 +1,31 @@
+zero:=0
+one:=1
+littlea:=97
+littlez:=122
+diff:=32
+len:=100
+space:=32
+readStr(s,len)
+i:=100
+isFirst:=1
+loop: tmp:=M[i+0]
+	if tmp=zero then goto end
+	if littlea > tmp then goto skip
+	if tmp > littlez then goto skip
+	if isFirst = zero then goto skip	
+	tmp:=tmp-diff
+	M[i+0]:=tmp	
+	isFirst := zero
+	skip:
+	if tmp > space then goto next
+	if tmp<space then goto next
+	isFirst:=one
+	next:
+	i:=i+one
+	goto loop
+end: writeStr(s)
+halt
+equ zero M[0] equ one M[1] equ littlea M[2]
+equ littlez M[3] equ diff M[4] equ len M[5]
+equ s M[100] equ tmp M[6] equ i M[7] equ space M[8]
+equ isFirst M[9]

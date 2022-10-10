@@ -1,0 +1,98 @@
+     M[0]:=0
+     M[1]:=0
+     M[2]:=0
+     M[3]:=0
+     M[4]:=0
+     M[5]:=0
+     M[6]:=0
+     M[7]:=0
+     M[8]:=1
+     M[9]:=10
+     goto l0
+l1:  PhysR4:=2
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR0
+     PhysR4:=3
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR1
+     PhysR4:=4
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR2
+     PhysR4:=5
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR3
+     PhysR4:=7
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR5
+     PhysR4:=8
+     PhysR4:=PhysR4+SP
+     M[PhysR4+0]:=PhysR6
+     R1:=SP+zero
+     R0:=8
+     R1:=R1+R0
+     R0:=M[R1+0]
+     R2:=5
+     R0:=R0+R2
+     PhysR6:=R0+zero
+     PhysR4:=2
+     PhysR4:=PhysR4+SP
+     PhysR0:=M[PhysR4+0]
+     PhysR4:=3
+     PhysR4:=PhysR4+SP
+     PhysR1:=M[PhysR4+0]
+     PhysR4:=4
+     PhysR4:=PhysR4+SP
+     PhysR2:=M[PhysR4+0]
+     PhysR4:=5
+     PhysR4:=PhysR4+SP
+     PhysR3:=M[PhysR4+0]
+     PhysR4:=7
+     PhysR4:=PhysR4+SP
+     PhysR5:=M[PhysR4+0]
+     SP:=SP+one
+     SP:=M[SP+0]
+     PC:=PhysR5
+l0:
+     R3:=10
+     break
+     R4:=8
+     R4:=R4+SP
+     M[R4+0]:=R3
+     R6:=SP+zero
+     R5:=8
+     R6:=R6+R5
+     R5:=M[R6+0]
+     PhysR4:=SP+zero
+     PhysR5:=9
+     PhysR5:=SP+PhysR5
+     M[PhysR5+0]:=PhysR4
+     PhysR4:=PhysR5+one
+     M[PhysR4+0]:=SP
+     PhysR6:=R5+zero
+     PhysR5:=9
+     SP:=SP+PhysR5
+     PhysR5:=PC+1
+     goto l1
+     R5:=PhysR6+zero
+     writeInt(R5)
+     halt
+     equ zero M[7]
+     equ one M[8]
+     equ PhysR0 M[0]
+     equ PhysR1 M[1]
+     equ PhysR2 M[2]
+     equ PhysR3 M[3]
+     equ PhysR4 M[4]
+     equ PhysR5 M[5]
+     equ PhysR6 M[6]
+     equ SP M[9]
+     equ R0 M[0]
+     equ R1 M[1]
+     equ R2 M[1]
+     equ R3 M[0]
+     equ R4 M[1]
+     equ R5 M[0]
+     equ R6 M[1]
+     equ R7 M[1]
+     equ R8 M[2]
+     equ R9 M[3]

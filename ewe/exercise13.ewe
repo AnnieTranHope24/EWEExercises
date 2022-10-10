@@ -1,0 +1,22 @@
+SP := 100
+one := 1
+count := 0
+capacity := 3
+temp:=0
+readloop:
+	readInt(x)
+	count := count + one
+	M[SP +0]:= x
+	
+	if temp>x then goto skip
+		temp:=x
+	skip:
+	SP:=SP+one	
+	if count >= capacity then goto end
+	goto readloop	
+end:
+	writeInt(temp)
+	halt
+equ SP M[0] equ x M[1]
+equ one M[2] equ count M[3] equ capacity M[4]
+equ temp M[5]

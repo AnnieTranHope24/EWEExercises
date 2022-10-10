@@ -1,0 +1,2 @@
+Skeleton 5
+ae"eweLexFun"i2aä¢Tokens"gp1c"ewe_TOKENS"f5Cd"Int"ä¢Char"ä¢TextIO"ÿä¢Vector"Nh3aä¢yyInput"jh3aä¢TIO"gp1ÿ9ad"TSIO"gp2ÿd"StreamIO"ad"TPIO"gp1d"TextPrimIO"è0aä¢UserDeclarations"ÿ‚bbd2egp1ÿ‚f8d"IO"ÿ2d"List"Cd"String"ÿÿ‚ÿÿNf0f1ÿ

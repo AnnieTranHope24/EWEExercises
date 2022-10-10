@@ -1,0 +1,3 @@
+    PhysR4:=2
+    halt
+    equ PhysR4 M[0]

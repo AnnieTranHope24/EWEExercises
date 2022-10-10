@@ -1,0 +1,16 @@
+SP := 100
+one := 1
+temp:=1
+factorial:=1
+readInt(x)
+loop:
+	if temp>x then goto end
+	factorial := factorial*temp
+	temp:=temp+one
+	goto loop
+end:
+	writeInt(factorial)
+	halt
+equ SP M[0] equ x M[1]
+equ one M[2] 
+equ temp M[3] equ factorial M[4]

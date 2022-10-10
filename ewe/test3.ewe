@@ -1,0 +1,9 @@
+# This program tests comments (this line)
+# and it tests the less than operator.
+  zero := 0
+  readInt(X)
+  if X<zero then goto end  
+  writeInt(X)
+end: halt
+  equ X M[0]
+  equ zero M[1]

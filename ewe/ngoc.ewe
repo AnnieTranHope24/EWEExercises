@@ -1,0 +1,20 @@
+SP := 100
+hundred := 100
+zero := 0
+one := 1
+readloop:
+readInt(x)
+if x = zero then goto printloop
+M[SP+0] := x
+SP := SP + one
+goto readloop
+printloop:
+SP := SP - one
+if SP < hundred then goto end
+x := M[SP+0]
+writeInt(x)
+goto printloop
+end:
+halt
+equ SP M[0] equ hundred M[1] equ x M[3]
+equ zero M[4] equ one M[5]

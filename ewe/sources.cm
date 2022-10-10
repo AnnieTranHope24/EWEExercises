@@ -1,0 +1,9 @@
+Library
+  structure ewe
+is
+  ewe.lex
+  ewe.grm
+  ewe.sml
+  eweast.sml
+  $/basis.cm
+  $/ml-yacc-lib.cm

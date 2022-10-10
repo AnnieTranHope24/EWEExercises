@@ -1,0 +1,9 @@
+     M[0]:=0
+     M[1]:=6
+l1:  M[2]:=PC+0
+     writeInt(M[2])
+     PC:=M[1]
+     goto l1
+     halt
+     equ zero M[0]
+     equ one M[1]

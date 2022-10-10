@@ -1,0 +1,2 @@
+Skeleton 5
+ad"ewe"h5Cegp1d"eweAS"f6d"OS"Cd"Int"d"List"d"Option"d"String"d"TextIO"Naä¢eweLrVals"jh1aä¢Token"gp2ä¢LrParser"ÿgp1e"eweLrValsFun"aä¢eweLex"jh1aä¢Tokens"gp2ÿÿ‚gp1e"eweLexFun"ad"eweParser"jh3ad"Lex"gp1ÿ‚aÿ#gp1ÿ#aä¢ParserData"gp2ÿÿƒgp1e"Join"N

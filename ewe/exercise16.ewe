@@ -1,0 +1,27 @@
+SP := 100
+one := 1
+temp:=0
+square:=0
+space:=" "
+readInt(x)
+loop:
+		M[SP+0]:=temp
+		square:=temp*temp
+		if square>=x then goto end
+		temp:=temp+one
+		SP:=SP+one
+		goto loop
+		
+end:
+	if square=x then goto substitute
+	SP:=SP-one
+	temp:=M[SP+0]
+	writeInt(temp)
+	temp:=temp+one
+	writeStr(space)
+	substitute:
+	writeInt(temp)	
+	halt
+equ SP M[0] equ x M[1]
+equ one M[2] 
+equ temp M[100] equ square M[4] equ space M[5]

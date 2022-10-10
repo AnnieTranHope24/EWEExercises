@@ -1,0 +1,26 @@
+SP:=100
+# int a=0;
+R0:=0 # load 0 
+M[SP+12]:=R0 
+R1:=5 # load 5 
+M[SP+13]:=R1 #intc=b+1; 
+R2:=SP # b+1 
+R2:=M[R2+13] #
+R3:=1
+R2:=R2+R3 
+M[SP+14]:=R2 
+R4:=SP # b*c
+R4:=M[R4+13] # 
+R5:=SP 
+R5:=M[R5+14] # 
+R4:=R4*R5
+R6:=SP 
+M[R6+12]:=R4 
+R7:=M[SP+12]
+writeInt(R7) 
+halt 
+equ SP M[10] 
+equ R2 M[0] 
+equ R5 M[1]
+equ R0 M[0] equ R3 M[1] equ R6 M[1]
+equ R1 M[0] equ R4 M[0] equ R7 M[0]
